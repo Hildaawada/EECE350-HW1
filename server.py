@@ -1,3 +1,9 @@
+from time import time
+import requests
+import socket
+#proxy server
+SPS = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+print("socket successfully created")
 serverPORT=4359
 proxyIP=(socket.gethostbyname(socket.gethostname())) #this is the local server's IP address
 print(proxyIP)
