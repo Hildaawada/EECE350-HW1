@@ -22,7 +22,7 @@ while True:
         #it is used to avoid this confusion when the proxy server wants to send
         PSW=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
         PSW.connect((INPUT,80))
-        request_string="GET / HTTP/1.1\r\nHost: " + INPUT + "\r\n\r\n"
+        request_string=f"GET / HTTP/1.1\r\nHost:{INPUT}\r\n\r\n"
         # send the client's request to the destination server
         print("request to destination server:",request_string)
         print("request to destination server at exact time",time())
