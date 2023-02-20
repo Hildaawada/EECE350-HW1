@@ -1,6 +1,5 @@
 from time import time
 from datetime import datetime
-import requests
 import socket
 #proxy server
 SPS = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
